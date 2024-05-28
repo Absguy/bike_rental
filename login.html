@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  body {
+    background-color: darkseagreen;
+    color: black;
+  }
+
+  button {
+    background-color: darkseagreen;
+  }
+
+  button:hover {
+    background-color: rgb(117, 157, 117);
+  }
+
+  input {
+    background-color: yellowgreen;
+    color: black;
+  }
+
+  .info-bar {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  table {
+    text-align: center;
+  }
+
+  button {
+    background-color: white;
+  }
+</style>
+
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Login
+        </div>
+        <div class="card-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  let username = document.getElementById('username').value;
+  let password = document.getElementById('password').value;
+
+  // Add your validation logic here
+  if(username === 'yourUsername' && password === 'yourPassword') {
+    alert('Login successful');
+    window.location.href = 'afterlogin.html'; // Redirect to try.html
+  } else {
+    alert('Invalid username or password. Please try again.');
+  }
+});
+</script>
+
+</body>
+</html>

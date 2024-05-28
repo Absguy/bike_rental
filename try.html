@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mOTRBYKE Rentals</title>
+  <style>
+    body{
+        background-color: white;
+        color: black;
+    }
+    button{
+      background-color: white;
+    }
+    button:hover{
+      background-color: rgb(143, 145, 143);
+    }
+    input{
+      background-color: yellowgreen;
+      color: black;
+    }
+    .info-bar {
+      background-color: darkgreen;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .menu li:last-child {
+      margin-right: 0;
+    }
+    .menu li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+    table{
+      text-align: center;
+    }
+    .back{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="info-bar">
+  <div class="menu-icon">
+    <img src="image/588a6507d06f6719692a2d15 (1).png" width="30" height="30">
+  </div>
+  <ul class="menu">
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="login.html">Login/Sign Up</a></li>
+  </ul>
+</div>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<table align="center" width="1250px">
+  <tr>
+    <td>
+      <button><img src="image/vehicle_11373926.png" width="60" height="60"></button>
+    </td>
+    <td>
+      <button><img src="image/motorcycle_6818731.png" width="60" height="60"></button>
+    </td>
+    <td>
+      <button> <img src="image/motorcycle_1465171.png" width="60" height="60"></button>
+    </td>
+    <td>
+      <button><img src="image/electric-scooter_12491579.png" width="60" height="60"></button> 
+    </td>
+  </tr>
+  <tr>
+    <td>Scooter</td>
+    <td>Bike</td>
+    <td>Premium Bikes</td>
+    <td>EV</td>
+  </tr>
+</table>
+<br><br><br><br>
+<table align="center" width="1250px">
+  <tr>
+    <td>
+      <img src="image/secured-payment_10967217.png" width="120" height="120">
+    </td>
+    <td>
+      <img src="image/refund_13319116.png" width="120" height="120">
+    </td>
+    <td>
+      <img src="image/verified-user_6025583.png" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td>Secured Payments</td>
+    <td>100% Money Back Guarantee</td>
+    <td>Verified Dealers</td>
+  </tr>
+</table>
+<a href="title.html" class="back"><img src="image/arrow_14744858.png" width="10" height="10">Back</a>
+
+<script>
+  // Function to display the login alert
+  function displayLoginAlert() {
+    alert('Login to Continue');
+  }
+
+  // Add event listeners to all buttons on the page
+  var buttons = document.querySelectorAll('button');
+  buttons.forEach(function(button) {
+    button.addEventListener('click', displayLoginAlert);
+  });
+
+  // Add event listeners to all form submission events on the page
+  var forms = document.querySelectorAll('form');
+  forms.forEach(function(form) {
+    form.addEventListener('submit', displayLoginAlert);
+  });
+</script>
+
+</body>
+</html>

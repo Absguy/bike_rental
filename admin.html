@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MOTRBYKE Rentals - Admin Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkseagreen;
+            margin: 0;
+            padding: 20px;
+            button{
+                background-color: darkseagreen;
+                border: 0px;
+            }
+            button:hover{
+      background-color: rgb(117, 157, 117);
+      border: 0px;
+    }
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: darkseagreen;
+            margin: 5px 0;
+            padding: 10px;
+            
+            
+        }
+        li:hover {
+            background-color: rgb(115, 153, 115);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to MOTRBYKE Rentals Admin Page</h1>
+    <h2>Bike Inventory Management</h2>
+    <ul>
+        <li>Add New bike</li>
+        <li>Update Bike Details</li>
+        <li>Delete Bike</li>
+    </ul> 
+    <h2>Booking Management</h2>
+    <ul>
+        <li>View Bookings</li>
+        <li>Approve Bookings</li>
+        <li>Cancel Bookings</li>
+    </ul>
+
+    <h2>Reports</h2>
+    <ul>
+        <li>Generate Sales Report</li>
+        <li>View Rental History</li>
+    </ul>
+
+    <h2>Settings</h2>
+    <ul>
+        <li>Change Password</li>
+        <li>Logout</li>
+    </ul>
+    <a href="title.html"><button id="backButton"><img src="image/arrow_14744858.png" width="10  " height="10">Back</button></a>
+
+    <script>
+        
+        document.getElementById('backButton').addEventListener('click', function() {
+            alert('Going back to the title page!');
+           
+        });
+    </script>
+</body>
+</html>
